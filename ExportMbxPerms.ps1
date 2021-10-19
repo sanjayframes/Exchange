@@ -66,7 +66,7 @@ if($FullAccess.IsPresent)
         Write-Host "`n`tExporting Mailbox FullAccess Info....@ " -NoNewline; Write-Host  "$(get-time)" -ForegroundColor Green
         if(Test-Path $FullPermissionsFileName){Write-Host "File already exist"}else{
         $fullpermissionsHeader = "Mailbox,User,AccessRights"
-        $FullPermissionsFileName = "C:\Users\SanjayKumarPasupulet\Downloads\Permissions\FullAccess-Permissions.txt"
+        $FullPermissionsFileName = ".\Permissions\FullAccess-Permissions.txt"
         Out-File -FilePath $FullPermissionsFileName -InputObject $fullpermissionsHeader -Append}
 
 
